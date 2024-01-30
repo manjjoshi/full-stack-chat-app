@@ -1,0 +1,36 @@
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(45deg); /* Adjust the angle of rotation as needed */
+    }
+  }
+  
+  .animated-svg:hover {
+    animation: rotate 0.5s ease; /* Adjust the animation duration and timing function as needed */
+  }
+  .bg-indigo-500 text-white px-4 py-2 rounded{
+    width: 150px; /* Adjust the width as needed */
+  }
+  .text-indigo-600 {
+    transition: transform 0.3s ease-in-out; /* Adjust the duration and timing function as needed */
+  }
+  .text-indigo-600:hover {
+    
+    transform: scale(1.1);
+  }
+  .circle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .svg-item {
+    width: 50px; /* Adjust the size of the SVGs */
+    height: 50px;
+    margin: 0 10px; /* Adjust the spacing between SVGs */
+    transform-origin: center bottom;
+    animation: rotate 5s linear infinite; /* Add animation if needed */
+  }
